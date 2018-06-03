@@ -27,7 +27,7 @@ elif [ $# -eq "1" ]; then
 	# Check if dirpath is an empty string
 	if [[ -z "$dirpath" ]]; then
 		# If root directory, change value of variable to the text in quotes
-		dirpath="."
+		dirpath="root"
 	fi
 	# Redirect any stderr and stdout to /dev/null
 	cd $1 > /dev/null 2>&1
