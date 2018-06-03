@@ -31,13 +31,21 @@ that is, the directory in which the code is being executed.
 
 ```
 Option 1: ./projectLines.sh
-Output: Found 2389 lines of code in .
+Output: Found 2389 lines of code in the root directory .
 ```
 
 ```
 Option 2: ./projectLines.sh sample-project
-Output: Found 4345 lines of code in ./sample-project/
+Output: Found 4345 lines of code in ./sample-project/ .
 ```
+
+To see the help page:
+```
+Option 1: ./projectLines.sh -h
+**OR**
+Option 2: ./projectLines.sh --help
+```
+
 # Redirecting Output
 
 If you want to save the output into a file instead of printing 
