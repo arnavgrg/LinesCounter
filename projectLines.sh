@@ -41,7 +41,7 @@ elif [ $# -eq "1" ]; then
 	fi
 fi
 
-# Count number of lines with the directory we cd'd into
+# Count number of lines within the directory we cd'd into
 count=`find . -type f -execdir wc -l {} \; | awk '{lines += $1} END{print lines }'`
 
 # Write to the terminal
