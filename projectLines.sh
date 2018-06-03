@@ -24,9 +24,10 @@ dirpath;
 elif [ $# -eq "1" ]; then
 	# Set dirpath to the first argument
 	dirpath=$1
+	# Check if dirpath is an empty string
 	if [[ -z "$dirpath" ]]; then
-		#If root directory, change value of variable to the text in quotes
-		dirpath="the root directory"
+		# If root directory, change value of variable to the text in quotes
+		dirpath="root"
 	fi
 	# Redirect any stderr and stdout to /dev/null
 	cd $1 > /dev/null 2>&1
@@ -44,7 +45,7 @@ fi
 count=`find . -type f -execdir wc -l {} \; | awk '{lines += $1} END{print lines }'`
 
 # Write to the terminal
-echo "Found $count lines of code in $dirpath ."
+echo "Found $count lines of code in $dirpath"
 
 # Exit with code 0 on successful completion.
 exit 0
