@@ -43,7 +43,9 @@ To see the help page:
 ```
 Option 1: ./projectLines.sh -h
 **OR**
-Option 2: ./projectLines.sh --help
+Option 2: ./projectLines.sh -help
+**OR**
+Option 3: ./projectLines.sh --help
 ```
 
 # Redirecting Output
