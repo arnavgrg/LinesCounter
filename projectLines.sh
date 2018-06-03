@@ -23,11 +23,11 @@ dirpath;
 # If argument is provided, attempt to cd into directory
 elif [ $# -eq "1" ]; then
 	# Set dirpath to the first argument
-	dirpath=$1
+	dirpath="$1"
 	# Check if dirpath is an empty string
 	if [[ -z "$dirpath" ]]; then
 		# If root directory, change value of variable to the text in quotes
-		dirpath="root"
+		dirpath="$PWD"
 	fi
 	# Redirect any stderr and stdout to /dev/null
 	cd $1 > /dev/null 2>&1
