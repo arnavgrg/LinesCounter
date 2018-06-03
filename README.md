@@ -1,13 +1,14 @@
-# ProjectLines
+# LinesCounter
 This bashscript counts the number of lines of code written in your 
-local github repository (cloned repository). 
+local github repository (cloned repository) or other any other folder
+with code. 
 
 # Download Repository
 
 After opening the bash terminal, you can use the following command
 to clone this repository:
 
-``` git clone https://github.com/arnavgrg/ProjectLines.git ```
+``` git clone https://github.com/arnavgrg/LinesCounter.git ```
 
 # Provide Permissions 
 After cloning this repository, run the following command to provide 
@@ -56,3 +57,7 @@ it out to the bash terminal, you can run the command like this:
 ```./projectLines.sh sample-project &> lines.txt```
 
 This will redirect both stdout and stderr to the file lines.txt
+
+# Deleting Repository
+
+```rm -rf LinesCounter/```
