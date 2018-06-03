@@ -19,6 +19,7 @@ elif [[ $# -eq "1" && $1 = "-h" ]] || [[ $# -eq "1" && $1 = "-help" ]] || [[ $# 
 	echo "Example: ./projectLines.sh ./sample-project/"
 	exit 1
 
+dirpath;
 # If argument is provided, attempt to cd into directory
 elif [ $# -eq "1" ]; then
 	# Set dirpath to the first argument
