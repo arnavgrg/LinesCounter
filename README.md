@@ -7,7 +7,7 @@ local github repository (cloned repository).
 After opening the bash terminal, you can use the following command
 to clone this repository:
 
-``` git clone ```
+``` git clone https://github.com/arnavgrg/ProjectLines.git ```
 
 # Provide Permissions 
 After cloning this repository, run the following command to provide 
@@ -16,10 +16,11 @@ the required permissions to run the file:
 ```chmod 750 projectLines.sh```
 
 The permission '750' provides the user with rwx permissions,
-the group with rx permissions, where
--r: read
--w: write
--x: execute
+the group with rx permissions, where:
+
+- r: read
+- w: write
+- x: execute
 
 # Executing the file
 
