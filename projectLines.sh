@@ -26,7 +26,7 @@ elif [ $# -eq "1" ]; then
 	dirpath=$1
 	if [[ $dirpath = "" ]]; then
 		#If root directory, change value of variable to the text in quotes
-		dirpath="the root directory"
+		dirpath=$("the root directory")
 	fi
 	# Redirect any stderr and stdout to /dev/null
 	cd $1 > /dev/null 2>&1
@@ -41,7 +41,7 @@ elif [ $# -eq "1" ]; then
 fi
 
 # Count number of lines with the directory we cd'd into
-count=`find . -type f -exec wc -l {} \; | awk '{lines += $1} END{print lines }'`
+count=`find . -type f -execdir wc -l {} \; | awk '{lines += $1} END{print lines }'`
 
 # Write to the terminal
 echo "Found $count lines of code in $dirpath ."
