@@ -24,9 +24,9 @@ dirpath;
 elif [ $# -eq "1" ]; then
 	# Set dirpath to the first argument
 	dirpath=$1
-	if [[ $dirpath = "" ]]; then
+	if [[ -z "$dirpath" ]]; then
 		#If root directory, change value of variable to the text in quotes
-		dirpath=$("the root directory")
+		dirpath="the root directory"
 	fi
 	# Redirect any stderr and stdout to /dev/null
 	cd $1 > /dev/null 2>&1
