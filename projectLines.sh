@@ -36,6 +36,7 @@ elif [ $# -eq "1" ]; then
 	if [ $? -ne "0" ]; then
 		echo "Attempt to cd into provided path failed."
 		echo "Path provided is not a valid directory."
+		echo "Type ./projectLines.sh -h for help"
 		# Exit with code 1 to indicate failure
 		exit 1
 	fi
