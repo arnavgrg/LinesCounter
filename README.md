@@ -43,6 +43,6 @@ Output: Found 4345 lines of code in ./sample-project/
 If you want to save the output into a file instead of printing 
 it out to the bash terminal, you can run the command like this:
 
-```./projectLines sample-project &> lines.txt```
+```./projectLines.sh sample-project &> lines.txt```
 
 This will redirect both stdout and stderr to the file lines.txt
