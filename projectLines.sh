@@ -26,7 +26,7 @@ elif [ $# -eq "1" ]; then
 	dirpath="$1"
 	# Check if dirpath is an empty string
 	if [[ -z "$dirpath" ]]; then
-		# If root directory, change value of variable to the text in quotes
+		# If root directory, change value of variable to the path of the current directory
 		dirpath="$PWD"
 	fi
 	# Redirect any stderr and stdout to /dev/null
